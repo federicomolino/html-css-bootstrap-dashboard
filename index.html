@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
               <img src="./css/duck.png" alt="logo" height="70">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,12 +31,16 @@
                   </li>
                 </ul>
               </div>
+              <!--Ricerca-->
+              <form class="d-flex justify-content-end" role="search">
+                <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Cerca</button>
             </div>
           </nav>
     </header>
 
     <main>
-        <div class="container mt-4">
+        <div class="container mt-4 .container-xl">
             <div class="d-flex justify-content-between">
               <h1 class="h4">Catalogo Libri</h1>
               <button type="button" class="btn btn-primary">Aggiungi Libro</button>
@@ -175,6 +179,32 @@
                   </tr>
                 </tbody>
               </table>
+          </div>
+
+          <div class="container">
+          <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">Todo</h5>
+            </div>
+            <div class="card-body">
+                <div class="list-group">
+                    <!-- Primo elemento -->
+                    <label class="list-group-item d-flex align-items-center">
+                        <input class="form-check-input me-2" type="checkbox" value="">
+                        Chiamare segreteria
+                    </label>
+                    <!-- Secondo elemento -->
+                    <label class="list-group-item d-flex align-items-center">
+                        <input class="form-check-input me-2" type="checkbox" value="">
+                        Mandare avvisi prestiti scaduti
+                    </label>
+                    <!-- Terzo elemento -->
+                    <label class="list-group-item d-flex align-items-center">
+                        <input class="form-check-input me-2" type="checkbox" value="">
+                        Ordinare nuovi libri
+                    </label>
+                </div>
+            </div>
           </div>
     </main>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
